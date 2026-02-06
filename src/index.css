@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    /* Primary Colors */
+    --color-primary: #1D3557;
+    --color-primary-dark: #004479;
+    --color-primary-light: #0078D7;
+
+    /* Background Colors */
+    --color-surface: #FFFFFF;
+    --color-background: #F5F8FB;
+    --color-card: #FFFFFF;
+
+    /* Border Colors */
+    --color-border: #E0E8ED;
+
+    /* Text Colors */
+    --color-text-dark: #1D3557;
+    --color-text-muted: #8597A8;
+
+    /* Status Colors */
+    --color-success: #1EA54E;
+    --color-warning: #F59F0A;
+    --color-error: #F50A0A;
+    --color-info: #0078D7;
+    --color-danger: #DB1F26;
+
+    /* Badge/Status Legend Colors */
+    --color-badge-gray: #8597A8;
+    --color-badge-green: #1EA54E;
+    --color-badge-yellow: #F59F0A;
+    --color-badge-orange: #F59F0A;
+    --color-badge-red: #F50A0A;
+    --color-badge-blue: #0078D7;
+    --color-badge-darkblue: #004479;
+
+    /* Gauge Colors */
+    --color-gauge-green: #439F57;
+    --color-gauge-red: #DB1F26;
+
+    /* Chart Colors */
+    --color-chart-blue: #0078D7;
+}
+
+@layer base {
+    body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--color-background);
+    }
+}
+
+@layer utilities {
+    .font-cairo {
+        font-family: 'Cairo', sans-serif;
+    }
+
+    .font-ibm-plex {
+        font-family: 'IBM Plex Sans Arabic', sans-serif;
+    }
+}
