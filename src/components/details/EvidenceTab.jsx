@@ -24,8 +24,7 @@ export default function EvidenceTab({ documentsData, commentsData, activitiesDat
 
                     <div className="border border-border rounded-[10px] p-2">
                         <textarea
-                            className="w-full h-24 resize-none outline-none font-cairo text-[14px] p-2"
-                            placeholder={uiStrings.commentPlaceholder}
+                            className="w-full h-24 resize-none outline-none font-cairo text-[14px] p-2 resize-y"
                         />
                     </div>
                     <div className="mt-4">

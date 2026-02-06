@@ -33,8 +33,8 @@ const TABS = tabsConfig.map(tab => ({
 const EVIDENCE_CARDS = [
     { icon: TotalEvidenceIcon, key: 'total', label: evidenceCardsLabels.total, color: colors.danger },
     { icon: UnderReviewEvidenceIcon, key: 'underReview', label: evidenceCardsLabels.underReview, color: colors.danger },
-    { icon: InProgressEvidenceIcon, key: 'inProgress', label: evidenceCardsLabels.inProgress, color: colors.warning },
-    { icon: CompletedEvidenceIcon, key: 'completed', label: evidenceCardsLabels.completed, color: colors.success },
+    { icon: InProgressEvidenceIcon, key: 'inProgress', label: evidenceCardsLabels.inProgress, color: colors.danger },
+    { icon: CompletedEvidenceIcon, key: 'completed', label: evidenceCardsLabels.completed, color: colors.danger },
 ];
 
 export default function DetailsPage() {
@@ -76,7 +76,7 @@ export default function DetailsPage() {
         <DashboardLayout>
             <div className="space-y-6">
                 <header className="flex items-center gap-2">
-                    <button onClick={handleBack} className="hover:opacity-70 transition-opacity">
+                    <button onClick={handleBack} className="hover:opacity-70 transition-opacity cursor-pointer">
                         <ArrowLeft size={16} className="text-primary" strokeWidth={1.5} />
                     </button>
                     <h1 className="font-cairo font-bold text-[16px] leading-[16px] text-primary capitalize">

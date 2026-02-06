@@ -13,7 +13,7 @@ export default function CommentCard({ author, initial, date, content }) {
                         {author}
                     </span>
                 </div>
-                <span className="font-cairo text-[12px] text-text-muted">{date}</span>
+                <span className="font-cairo text-[14px] text-text-muted">{date}</span>
             </div>
             <p className="font-cairo text-[14px] text-text-dark">{content}</p>
         </div>
